@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tentang Kami - Sekolah Kita</title>
+    <link rel="stylesheet" href="style.css"> <!-- Tambahkan link ke file CSS -->
+</head>
+<body>
+    <style>
+ 
+/* About Page Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+/* About Section */
+#about {
+    padding: 60px 0;
+    text-align: center;
+}
+
+#about h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#about p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 30px;
+    padding: 0 20px;
+}
+
+#about .about-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* Vision and Mission Styles */
+#vision-mission, #values {
+    padding: 40px 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+#vision-mission h2, #values h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#vision-mission p, #values ul {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+}
+
+#values ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#values li {
+    margin-bottom: 10px;
+    text-align: left; /* Align text to the left */
+}
+
+/* Home Button Styles */
+.btn-home {
+    background-color: #007BFF;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.btn-home:hover {
+    background-color: #0056b3;
+}
+
+/* Team Section */
+#team {
+    padding: 60px 0;
+    background-color: #fff;
+}
+
+#team h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+}
+
+.team-grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.team-member {
+    flex: 1;
+    margin: 20px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-member:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.team-member img {
+    max-width: 100%;
+    border-radius: 50%;
+    height: auto;
+}
+
+.team-member h3 {
+    margin-top: 15px;
+    font-size: 24px;
+    color: #333;
+}
+
+.team-member p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .team-grid {
+        flex-direction: column;
+    }
+
+    .team-member {
+        margin: 10px 0;
+    }
+}
+    </style>
+
+    <!-- Header -->
+
+
+
+
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h1>Tentang Kami</h1>
+            <p>
+                Sekolah Kita adalah lembaga pendidikan yang berdedikasi untuk memberikan pendidikan terbaik bagi setiap siswa. Kami percaya bahwa setiap anak memiliki potensi yang unik dan kami berkomitmen untuk membantu mereka mencapainya.
+            </p>
+            <img src="foto.jpg" alt="About Us" class="about-image">
+        </div>
+    </section>
+
+    <!-- Vision and Mission Section -->
+<section id="vision-mission">
+    <div class="container">
+        <h2>Visi dan Misi</h2>
+        <h3>Visi</h3>
+        <p>
+            Menjadi lembaga pendidikan unggulan yang menciptakan generasi penerus bangsa yang berkualitas, berkarakter, dan berwawasan global.
+        </p>
+        <h3>Misi</h3>
+        <ul>
+            <li>Menyediakan pendidikan yang berkualitas dan inovatif dengan mengedepankan nilai-nilai moral dan etika.</li>
+            <li>Mendorong pengembangan potensi siswa secara menyeluruh melalui kurikulum yang seimbang antara akademik dan non-akademik.</li>
+            <li>Membangun lingkungan belajar yang aman, nyaman, dan mendukung bagi setiap siswa untuk berprestasi.</li>
+        </ul>
+    </div>
+</section>
+
+<!-- Values Section -->
+<section id="values">
+    <div class="container">
+        <h2>Nilai-Nilai Kami</h2>
+        <ul>
+            <li><strong>Integritas</strong>: Kami menjunjung tinggi kejujuran dan transparansi dalam setiap tindakan.</li>
+            <li><strong>Kreativitas</strong>: Kami mendorong inovasi dan pemikiran kreatif di semua aspek pendidikan.</li>
+            <li><strong>Kolaborasi</strong>: Kami percaya bahwa kerjasama antara siswa, orang tua, dan guru adalah kunci keberhasilan pendidikan.</li>
+            <li><strong>Penghargaan</strong>: Kami menghargai keberagaman dan menghormati setiap individu di komunitas kami.</li>
+        </ul>
+    </div>
+</section>
+
+    <!-- Team Section -->
+    <section id="team">
+        <div class="container">
+            <h2>Tim Kami</h2>
+            <div class="team-grid">
+                <div class="team-member">
+                    <img src="https://via.placeholder.com/150" alt="Member 1">
+                    <h3>Amelia</h3>
+                    <p>Pengajar Matematika</p>
+                </div>
+                <div class="team-member">
+                    <img src="https://via.placeholder.com/150" alt="Member 2">
+                    <h3>Nasuki</h3>
+                    <p>Pengajar Bahasa Inggris</p>
+                </div>
+                <div class="team-member">
+                    <img src="https://via.placeholder.com/150" alt="Member 3">
+                    <h3>lilip</h3>
+                    <p>Pengajar Ilmu Pengetahuan</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Back to Home Button -->
+<div class="container" style="text-align: center; margin: 40px 0;">
+    <a href="index.html" class="btn-home">Kembali ke Beranda</a>
+</div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+            <p>&copy; 2024 Sekolah Kita.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

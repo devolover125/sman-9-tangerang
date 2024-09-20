@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeri - Sekolah Kita</title>
+    <link rel="stylesheet" href="">
+</head>
+<body>
+    <style>
+        /* Gallery Section Styles */
+#gallery {
+    padding: 50px 0;
+    text-align: center;
+}
+
+#gallery h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#gallery p {
+    font-size: 18px;
+    margin-bottom: 40px;
+    color: #666;
+}
+
+/* Gallery Grid */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 0 20px;
+}
+
+/* Gallery Items */
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+/* Responsive Grid for Mobile */
+@media (max-width: 768px) {
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Back to Home Button */
+.btn-home {
+    background-color: #007BFF;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-home:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);
+}
+    </style>
+
+
+
+    <!-- Gallery Section -->
+    <section id="gallery">
+        <div class="container">
+            <h1>Galeri Sekolah</h1>
+            <p>Kumpulan momen-momen penting dan kegiatan di Sekolah Kita.</p>
+
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="image1.jpg" alt="Foto Kegiatan 1">
+                </div>
+                <div class="gallery-item">
+                    <img src="image2.jpg" alt="Foto Kegiatan 2">
+                </div>
+                <div class="gallery-item">
+                    <img src="image3.jpg" alt="Foto Kegiatan 3">
+                </div>
+                <div class="gallery-item">
+                    <img src="image4.jpg" alt="Foto Kegiatan 4">
+                </div>
+                <div class="gallery-item">
+                    <img src="image5.jpg" alt="Foto Kegiatan 5">
+                </div>
+                <div class="gallery-item">
+                    <img src="image6.jpg" alt="Foto Kegiatan 6">
+                </div>
+            </div>
+        </div>
+
+        <!-- Back to Home Button -->
+        <div class="container" style="text-align: center; margin: 40px 0;">
+            <a href="index.html" class="btn-home">Kembali ke Beranda</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+            <p>&copy; 2024 Sman 9 tangerang</p>
+        </div>
+    </footer>
+
+</body>
+</html>
